@@ -1,0 +1,2 @@
+# SmartCode
+A pet application
