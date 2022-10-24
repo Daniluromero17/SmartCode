@@ -1,7 +1,7 @@
 
 # Mascota feliz Web App
 <p align="center">
-  <img src="http://www.fillmurray.com/460/300](https://user-images.githubusercontent.com/103224983/197426476-4e48b4a7-7cea-417e-9e59-1a7a50073663.png)">
+ ![white-logo](https://user-images.githubusercontent.com/103224983/197426763-6a205ab1-9ab6-4d14-a6e0-fc954c85fa37.png)
 </p>
 ---------------------------------
 
