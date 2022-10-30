@@ -1,5 +1,6 @@
 import {Entity, model, property, belongsTo} from '@loopback/repository';
 import {Usuario} from './usuario.model';
+import {Plan} from './plan.model';
 
 @model()
 export class Mascota extends Entity {
@@ -43,10 +44,8 @@ export class Mascota extends Entity {
   @belongsTo(() => Usuario)
   usuarioId: string;
 
-  @property({
-    type: 'string',
-  })
-  planId?: string;
+  @belongsTo(() => Plan)
+  planId: string;
 
   constructor(data?: Partial<Mascota>) {
     super(data);
