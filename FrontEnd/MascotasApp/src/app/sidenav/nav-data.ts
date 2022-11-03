@@ -16,9 +16,10 @@ export const navbarData = [
     },
     {
       routeLink: 'settings', 
-      icon: 'fa-sharp fa-solid fa-cog',
+      icon: 'fa-sharp fa-solid fa-cog', 
       label: 'Configuración'
     }
+    
 
 ];
 

@@ -11,6 +11,7 @@ import { ProductsComponent } from './products/products.component';
 import { SettingsComponent } from './settings/settings.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { StatisticsComponent } from './statistics/statistics.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { StatisticsComponent } from './statistics/statistics.component';
     ProductsComponent,
     SettingsComponent,
     SidenavComponent,
-    StatisticsComponent
+    StatisticsComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
