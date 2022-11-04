@@ -31,6 +31,17 @@ export class UsuarioController {
     public servicioAutenticacion : AutenticacionService
   ) {}
 
+  @post('/identificarUsuario',{
+    responses:{
+      '200':{
+        description: 'Identificacion de usuarios'
+      }
+    }
+  })
+  async identificarPersona(){
+  }
+  
+  
   @post('/usuarios')
   @response(200, {
     description: 'Usuario model instance',
