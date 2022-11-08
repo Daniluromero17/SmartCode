@@ -12,6 +12,9 @@ import { SettingsComponent } from './settings/settings.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { StatisticsComponent } from './statistics/statistics.component';
 import { HeaderComponent } from './header/header.component';
+//angular material imports
+import {OverlayModule} from '@angular/cdk/overlay'
+import {CdkMenuModule} from '@angular/cdk/menu'
 
 @NgModule({
   declarations: [
@@ -28,7 +31,9 @@ import { HeaderComponent } from './header/header.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    OverlayModule,
+    CdkMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

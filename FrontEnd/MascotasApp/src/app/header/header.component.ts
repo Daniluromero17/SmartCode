@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, HostListener, Input, OnInit } from '@angular/core';
+import { languages } from './header-dummy-data';
 
 @Component({
   selector: 'app-header',
@@ -10,9 +11,23 @@ export class HeaderComponent implements OnInit {
   @Input() collapsed = false;
   @Input() screenWidth = 0;
 
+  canShowSearchAsOverlay= false;
+  selectedLanguage: any;
+
+  languages = languages;
+
+
   constructor() { }
 
+  @HostListener('window:resize', ['$event'])
+  onResize(event:any){
+    this.checkCanShowSearchAsOverlay(window.innerWidth);
+    }
+  
+
   ngOnInit(): void {
+    this.checkCanShowSearchAsOverlay(window.innerWidth);
+    this.selectedLanguage = this.languages[0];
   }
 
   getHeadClass():string{
@@ -27,6 +42,14 @@ export class HeaderComponent implements OnInit {
     return styleClass;
 
 
+  }
+
+  checkCanShowSearchAsOverlay(innerWidth: number):void{
+    if(innerWidth <845){
+      this.canShowSearchAsOverlay = true;
+    }else{
+      this.canShowSearchAsOverlay = false;
+    }
   }
 
 }
