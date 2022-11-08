@@ -1,21 +1,32 @@
 <div class="head" [ngClass]="getHeadClass()">
     <div class="head-content">
         <div class="head-content-left">
-            <div class="search-container">
-                <div class="normal-search">
+            <div  class="search-container">
+                <div *ngIf="!canShowSearchAsOverlay" class="normal-search">
                    <input type="search" 
                         class="search" name="" id=""
                         placeholder="Buscar..."    
                     >
                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
                 </div>
+                <div *ngIf="canShowSearchAsOverlay">
+                    <button
+                        [cdkMenuTriggerFor]="searchOverlay"
+                        class="search-menu-btn ripple"
+                        >
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+    
+                    </button>
+                </div>
             </div>
+            
         </div>
         <div class="head-content-right">
             <div class="head-menu">
                 <div class="head-menu-item">
-                   <button class="head-menu-item-btn ripple">
-                       <img [src]="'assets/flag-co.png'" class="flag" alt="flag">
+                   <button class="head-menu-item-btn ripple"[cdkMenuTriggerFor]="languagesOverlay">
+                       <img [src]="'assets/'+ selectedLanguage.flag +'.png'" 
+                       class="flag" alt="flag">
                     </button>
                 </div>
                 <div class="head-menu-item">
@@ -25,12 +36,12 @@
                 </div>
                 <div class="head-menu-item">
                     <button class="head-menu-item-btn ripple">
-                       <i class="fa-solid fa-bell menu-icon"></i>
+                       <i class="fa-regular fa-bell menu-icon"></i>
                      </button>
                  </div>
                  <div class="head-menu-item">
                     <button class="head-menu-item-btn ripple">
-                       <i class="fa-solid fa-comment menu-icon"></i>
+                       <i class="fa-regular fa-comment menu-icon"></i>
                      </button>
                  </div>
             </div>
@@ -43,3 +54,25 @@
         </div>
     </div>
 </div>
+
+<ng-template #searchOverlay>
+    <div class="overlay overlay-search overlay-fall" cdkMenu>
+        <input type="search" class="search" name="" id="" placeholder="Buscar...">
+        <button class="search-btn">
+           <i class="fa-solid fa-magnifying-glass search-icon"></i> 
+        </button>
+    </div>
+</ng-template>
+
+
+<ng-template #languagesOverlay>
+    <div class="overlay overlay-languages overlay-fall" cdkMenu>
+         <ul>
+             <li *ngFor="let lang of languages" cdkMenuItem >
+                 <img [src]="'assets/' +lang.flag + '.png'" alt=" flag">
+                <span>{{lang.language}}</span>
+
+            </li>
+         </ul>
+    </div>  
+</ng-template>
