@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import{ MatDialog} from '@angular/material/dialog'
+import { LoginComponent } from '../login/login.component';
 
 @Component({
   selector: 'app-settings',
@@ -7,7 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SettingsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private diaalogRef :MatDialog) { }
+
+  openDialog(){
+    this.diaalogRef.open(LoginComponent);
+  
+    
+   
+
+  }
 
   ngOnInit(): void {
   }

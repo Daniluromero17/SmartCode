@@ -1,0 +1,37 @@
+
+<div mat-dialog-content>
+<div class="log-container" fxLayoutAlign="center center" fxFlexFill>
+ <mat-card class="log-card" fxFlex="25">
+    <mat-card-title class="log-card-title">
+         <h3>Inicio de sesion</h3>
+        </mat-card-title>
+    <mat-card-subtitle></mat-card-subtitle>
+    <form  fxLayout="column" class="form-container">
+        <mat-form-field appearence="outline">
+            <mat-label>Usuario</mat-label>
+            <input matInput placeholder="Usuario" class="input-user">
+        </mat-form-field>
+        <mat-form-field>
+             <mat-label>Enter your password</mat-label>
+    <input matInput [type]="hide ? 'password' : 'text'">
+    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+      <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+    </button>
+        </mat-form-field>
+        
+    </form>
+    <div class="f-pass">
+        <a href="#"class="f-pass-t">Olvidaste tu contraseña?</a>
+    </div>
+    <div class="btn-container" fxLayout="row" fxLayoutAlign="space-around end" >
+        <button mat-raised-button type="submit" (click)="login()" class="btn-login">
+           <span class="btn-login-label">Entrar</span> 
+        </button>   
+    </div> 
+ </mat-card>
+</div>
+
+
+
+
+

@@ -1,0 +1,82 @@
+.mat-cd-container{
+    
+    border-radius: .5rem;
+    background-color: #01a076; 
+    margin: 1.25rem 0 1.25rem 0;
+    box-shadow: 0 .25rem .5rem #c2c2c3;
+    
+
+    .mat-cd-header{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid #edf1f7;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #F2ECE4;
+        .mat-cd-logo-container{
+            
+            
+            direction: relative;
+            flex-direction: row;
+            border-radius: 0.7rem;
+            justify-content: center;
+        }
+        
+    }
+
+  .mt-cd-cont-container{
+      
+      margin-top: 0.25rem;
+      border-radius: 0.7rem;
+
+      .full-width{
+          background-color:#98D936 ;
+          
+          margin-top: 0.7rem;
+          width: 15rem;
+          padding: 0 0 0 0.7rem;
+          position: relative;
+          margin-left: 0.7rem;
+          margin-bottom: 0.7rem;
+          color: #01261C;
+          border-radius: 1rem;
+         
+      }
+
+      
+  }
+
+    .mat-btn-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1.25rem;
+        .mat-btn-item{
+
+            margin-left: 1rem;
+            margin-bottom: 0.7rem;
+            .btn-send{
+                height: 3rem;
+                background-color: #98D936;
+                color: #01261C;
+                font-size: 18px;
+                border-style: none;
+                width: 7rem;
+                border-radius: 0.7rem;
+            }
+            
+            .btn-cancel{
+                height: 3rem;
+                background-color: #d94e36;
+                color: #F2ECE4;
+                font-size: 18px;
+                border-style: none;
+                width: 7rem;
+                border-radius: 0.7rem;
+            }
+        }
+    }
+}

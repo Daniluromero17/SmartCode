@@ -3,9 +3,7 @@
     width:  calc(100% - 5rem);
     margin-left: 5.5rem;
     z-index: 1;
-   
-    transition:  all .5s ease;
-    
+    transition:  all .5s ease;    
     padding: 1.3rem 1.5rem 0 1.3rem;
     position: fixed;
     top: 0;
@@ -41,8 +39,6 @@
                         left: 0.813rem;
                         top: 0;
                         color: #01261C ;
-
-
                     }
 
                 }
@@ -55,8 +51,7 @@
                     border-radius: 50%;
                     outline: 0;
                     
-                    color: #01261C; 
-                    
+                    color: #01261C;           
                 }
 
                 .search-menu-btn:hover,
@@ -66,7 +61,6 @@
                         
                  }
                 }
-
             }
         }
         .head-content-right{
@@ -108,11 +102,7 @@
                    .menu-icon{
                        color: #F2ECE4;
                    }
-   
-
                 }
-
-
             }
 
             .head-user-avatar-container{
@@ -143,15 +133,8 @@
                   }
               }
             }
-
-
-
         }
-
     }
-
-
-
 }
 
 .head-trimmed{
@@ -172,7 +155,6 @@
     100%{
         box-shadow: 0 0 0 13px rgb(17 , 64, 126 , 0);
     }
-    
 }
 
 
@@ -183,8 +165,7 @@
     }
     100%{
         transform: scaleY(1);
-    }
-    
+    }   
 }
 
 .overlay{
@@ -192,17 +173,13 @@
     margin-top: 12px ;
     box-shadow:  0 1rem 3rem rgb(0 0 0 / 18%); 
     border-bottom-right-radius: 0.7rem;
-    border-bottom-left-radius: 0.7rem;
-    
+    border-bottom-left-radius: 0.7rem;    
 }
 
 
 .overlay-fall{
   animation: fall 300ms ease-in-out forwards;
   transform-origin: top center;
-
-
-
 }
 .overlay-search{
 
@@ -226,7 +203,7 @@
         background-color:#98D936;
         outline: 0; 
         padding: 0.47rem 0.75rem;           
-        color:#F2ECE4; 
+        color:#fff; 
         border-radius: 0.7rem;
 
     }
@@ -238,7 +215,6 @@
     ul{
         list-style: none;
         width: 10rem;
-
         li{
             padding: 0.35rem 1.5rem;
             font-size: 14px;
@@ -253,7 +229,5 @@
         li:hover{
             background: #4ABF2A;
         }
-    
     }
-
 }

@@ -1,0 +1,75 @@
+::ng-deep .mat-focused .mat-form-field-label {
+    /*change color of label*/
+    color: #fff !important;
+   }
+  
+   ::ng-deep.mat-form-field-underline {
+    /*change color of underline*/
+    background-color: green !important;
+    
+  } 
+  
+  ::ng-deep.mat-form-field-ripple {
+   /*change color of underline when focused*/
+   background-color: #4ABF2A !important;
+  }
+
+
+
+
+::ng-deep .mat-form-field.mat-focused .mat-input-element {
+    color: #fff;
+}
+
+
+  .log-card{
+      z-index: 2;
+      background-color: #98D936;
+      border-radius: 0.7rem;
+      width: 22rem;
+      height: 25rem;
+      position: fixed;
+
+      .log-card-title{
+          align-items: center;
+          background-color: #4ABF2A;
+          padding: 0.2rem 2rem 0.2rem 4rem;
+          border-radius: 0.7rem;
+          color: #F2ECE4 ;
+      }
+
+      .form-container{
+          margin-top: 5rem;
+          padding: 0 0.2rem 0 0.2rem;
+         
+          
+      }
+      .input-user{
+          font-display: 500;
+      }
+
+      .f-pass{
+          padding:  0 0.2rem ;
+          .f-pass-t{
+              font-size: 12px;
+          }
+      }
+
+      .btn-container{
+          
+          margin-top: 2rem;
+          padding: 0 0.2rem 0 0.2rem;
+          .btn-login{
+              width: 14rem;
+              height: 3rem;
+              background-color: #4ABF2A;
+              color: #fff;
+              border-radius: 0.7rem;
+
+              .btn-login-label{
+                  font-size: 18px;
+              }
+              
+          }
+      }
+  }
